@@ -2,22 +2,27 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+    <meta property="og:title" content="Roman Pobotin - Portfolio"/>
+    <meta property="og:image"
+          content="https://avatars3.githubusercontent.com/u/22815152?s=460&u=da4c50d1fa55ad1ad532b7671d1c7c27ffe34866&v=4"/>
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
-  <link href="{{ url_for('static', filename='favicon.ico') }}" rel="icon">
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate"/>
+    <meta content="Mashup templates have been developped by Orson.io team" name="author">
 
-  <title>Roman Pobotin - AQA</title>
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
 
-<link href="{{ url_for('static', filename='main.3f6952e4.css') }}" rel="stylesheet"></head>
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
+    <link href="{{ url_for('static', filename='favicon.ico') }}" rel="icon">
+
+    <title>Roman Pobotin - AQA</title>
+
+    <link href="{{ url_for('static', filename='main.3f6952e4.css') }}" rel="stylesheet">
+</head>
 
 <body class="minimal">
 <div id="site-border-left"></div>
@@ -26,57 +31,61 @@
 <div id="site-border-bottom"></div>
 <!-- Add your content of header -->
 <header>
-  <nav class="navbar  navbar-fixed-top navbar-inverse">
-    <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+    <nav class="navbar  navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index" title="">01 : Home</a></li>
-          <li><a href="./works" title="">02 : Works</a></li>
-          <li><a href="./about" title="">03 : About me</a></li>
-          <li><a href="./contact" title="">04 : Contact</a></li>
-        </ul>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav ">
+                    <li><a href="./index" title="">01 : Home</a></li>
+                    <li><a href="./works" title="">02 : Works</a></li>
+                    <li><a href="./about" title="">03 : About me</a></li>
+                    <li><a href="./contact" title="">04 : Contact</a></li>
+                </ul>
 
 
-      </div> 
-    </div>
-  </nav>
+            </div>
+        </div>
+    </nav>
 </header>
 <!-- Add your site or app content here -->
-  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./static/assets/images/index.png')">
+<div class="hero-full-container background-image-container white-text-container"
+     style="background-image: url('./static/assets/images/index.png')">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h1>Hello,<br>
-                <span id="typed-strings">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="hero-full-wrapper">
+                    <div class="text-content">
+                        <h1>Hello,<br>
+                            <span id="typed-strings">
                   <span>I'm Roman Pobotin</span>
                   <span>QA Automation</span>
                 </span>
-                <span id="typed"></span>
-              </h1>
+                            <span id="typed"></span>
+                        </h1>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
      type();
      movingBackgroundImage();
   });
+
 </script>
 
 
-<script type="text/javascript" src="{{ url_for('static', filename='main.70a66962.js') }}"></script></body>
+<script type="text/javascript" src="{{ url_for('static', filename='main.70a66962.js') }}"></script>
+</body>
 
 </html>
