@@ -17,7 +17,7 @@ PROJECTS = {
         'title': 'QA Skills',
         'desc': 'Pet project to gather all vacancies from Dou.ua, analyze them and make statistics by skills',
         'git_link': 'https://github.com/Goraved/qa_skills',
-        'site_link': ['https://qa_skills.herokuapp.com/'],
+        'site_link': ['https://qa-skills.herokuapp.com/'],
         'images': [
             {'name': 'qa_skills_02.png', 'desc': 'Statistic by day'},
             {'name': 'qa_skills_03.png', 'desc': 'Statistic by skill'}
@@ -40,7 +40,7 @@ PROJECTS = {
         'index': '004',
         'title': 'Typhon Web UI',
         'desc': 'Basic test framework to test Web UI using Selenium + Page Object + Allure',
-        'git_link': 'https://github.com/Goraved/typhon_web',
+        'git_link': 'https://github.com/Goraved/Typhon-web-UI',
         'images': [
             {'name': 'typhon_web_02.png', 'desc': 'Selenium'},
             {'name': 'allure_icon.png', 'desc': 'Allure'}
@@ -51,7 +51,7 @@ PROJECTS = {
         'index': '005',
         'title': 'Typhon Web API',
         'desc': 'Basic test framework to test REST API using requests + Allure',
-        'git_link': 'https://github.com/Goraved/typhon_web',
+        'git_link': 'https://github.com/Goraved/Typhon-API',
         'images': [
             {'name': 'typhon_api_02.png', 'desc': 'requests lib for the REST API'},
             {'name': 'allure_icon.png', 'desc': 'Allure'}
@@ -62,7 +62,7 @@ PROJECTS = {
         'index': '006',
         'title': 'Typhon Mobile',
         'desc': 'Basic test framework to test Mobile UI using Appium + Page Object + Allure',
-        'git_link': 'https://github.com/Goraved/typhon_mobile',
+        'git_link': 'https://github.com/Goraved/Typhon-Mobile',
         'images': [
             {'name': 'typhon_mobile_02.png', 'desc': 'Appium'},
             {'name': 'allure_icon.png', 'desc': 'Allure'}
@@ -73,7 +73,7 @@ PROJECTS = {
         'index': '007',
         'title': 'Typhon Ubuntu',
         'desc': 'Basic test framework to test Ubuntu',
-        'git_link': 'https://github.com/Goraved/typhon_ubuntu',
+        'git_link': 'https://github.com/Goraved/Typhon-Ubuntu',
         'images': [
             {'name': 'typhon_ubuntu_02.png', 'desc': 'Ubuntu'},
             {'name': 'allure_icon.png', 'desc': 'Allure'}
