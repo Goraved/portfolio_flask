@@ -1,5 +1,7 @@
 from flask import Flask, render_template
 
+from data import PROJECTS, PROJECT_LINKS
+
 app = Flask(__name__)
 
 
@@ -10,7 +12,14 @@ def main():
 
 @app.route('/work/<work_name>')
 def work(work_name):
-    return render_template('./work.html', work_name=work_name)
+    info = PROJECTS[work_name]
+    if 'typhon' not in work_name:
+        return render_template('./work.html', work_name=work_name, title=info['title'], desc=info['desc'],
+                               git_link=info['git_link'], site_link=info['site_link'], images=info['images'],
+                               projects=PROJECT_LINKS)
+    else:
+        return render_template('./work.html', work_name=work_name, title=info['title'], desc=info['desc'],
+                               git_link=info['git_link'], images=info['images'], projects=PROJECT_LINKS)
 
 
 @app.route('/<page_name>')

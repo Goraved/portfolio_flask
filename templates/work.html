@@ -2,22 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate"/>
+    <meta content="Mashup templates have been developped by Orson.io team" name="author">
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
-  <link href="{{ url_for('static', filename='favicon.ico') }}" rel="icon">
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
 
-  <title>Work</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
+    <link href="{{ url_for('static', filename='favicon.ico') }}" rel="icon">
 
-<link href="{{ url_for('static', filename='main.3f6952e4.css') }}" rel="stylesheet"></head>
+    <title>Work</title>
+
+    <link href="{{ url_for('static', filename='main.3f6952e4.css') }}" rel="stylesheet">
+</head>
 
 <body class="">
 <div id="site-border-left"></div>
@@ -26,95 +27,99 @@
 <div id="site-border-bottom"></div>
 <!-- Add your content of header -->
 <header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
-    <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+        <div class="container">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="/" title="">01 : Home</a></li>
-          <li><a href="/works" title="">02 : Works</a></li>
-          <li><a href="/about" title="">03 : About me</a></li>
-          <li><a href="/contact" title="">04 : Contact</a></li>
-        </ul>
-
-
-          <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-            <li><a href="./aqa_topics" title="" class="active">001</a></li>
-            <li><a href="./qa_skills" title="">002</a></li>
-            <li><a href="./sbt" title="">003</a></li>
-            <li><a href="./typhon_web" title="">004</a></li>
-            <li><a href="./typhon_api" title="">005</a></li>
-            <li><a href="./typhon_mobile" title="">006</a></li>
-            <li><a href="./typhon_ubuntu" title="">007</a></li>
-          </ul>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav ">
+                    <li><a href="/" title="">01 : Home</a></li>
+                    <li><a href="/works" title="">02 : Works</a></li>
+                    <li><a href="/about" title="">03 : About me</a></li>
+                    <li><a href="/contact" title="">04 : Contact</a></li>
+                </ul>
 
 
-      </div> 
-    </div>
-  </nav>
+                <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+                    {% for project in projects %}
+                    {% if work_name == project['link']%}
+                    <li><a href="./{{project['link']}}" title="" class="active">{{project['index']}}</a></li>
+                    {% else %}
+                    <li><a href="./{{project['link']}}" title="">{{project['index']}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
 </header>
 <div class="section-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <img src="{{ url_for('static', filename='assets/images/{{work_name}}_01.png') }}" class="img-responsive" alt="">
-        <div class="card-container">
-          <div class="text-center">
-            <h1 class="h2">{{work_name}}</h1>
-          </div>
-          <p>{{work_name}}</p>
-
-          <blockquote>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
-            <small class="pull-right">Irina Martin</small>
-          </blockquote>
-        </div>
-      </div>
-
-      
-      
-      <div class="col-md-8 col-md-offset-2 section-container-spacer">
+    <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <img src="{{ url_for('static', filename='assets/images/{{work_name}}_02.png') }}" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <img src="{{ url_for('static', filename='assets/images/{{work_name}}_03.png') }}" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
-          </div>
+            <div class="col-xs-12">
+                <img src="../static/assets/images/{{work_name}}_01.png" class="img-responsive" alt="">
+                <div class="card-container">
+                    <div class="text-center">
+                        <h1 class="h2">{{title}}</h1>
+                    </div>
+                    <blockquote>
+                        <p>{{desc}}</p>
+                        {% for link in site_link %}
+                        <small class="pull-left"><a href="{{site_link}}" target="_blank">Site link</a></small>
+                        {% endfor %}
+                        <small class="pull-right"><a href="{{git_link}}" target="_blank">Git link</a></small>
+                    </blockquote>
+                </div>
+            </div>
+
+
+            <div class="col-md-8 col-md-offset-2 section-container-spacer">
+                <div class="row">
+                    {% for image in images %}
+                    <div class="col-xs-12 col-md-6">
+                        <img src="../static/assets/images/{{image['name']}}" class="img-responsive img_max_height" alt="">
+                        <p>{{image['desc']}}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!--            <div class="col-xs-12">-->
+            <!--                <img src="../static/assets/images/{{work_name}}_03.png" class="img-responsive" alt="">-->
+            <!--            </div>-->
+
         </div>
-      </div>
-
-      <div class="col-xs-12">
-        <img src="./static/assets/images/work001-04.jpg" class="img-responsive" alt="">
-      </div>
-
     </div>
-  </div>
 </div>
 
 
 <footer class="footer-container text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/"
+                                                        title="Create website with free html template">Mashup
+                    Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
      navActivePage();
   });
+
+
+
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
@@ -130,6 +135,8 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="{{ url_for('static', filename='main.70a66962.js') }}"></script></body>
+-->
+<script type="text/javascript" src="{{ url_for('static', filename='main.70a66962.js') }}"></script>
+</body>
 
 </html>
