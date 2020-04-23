@@ -6042,3 +6042,8 @@ a.lightbox-close:after {
 .lightbox-target:target a.lightbox-close {
 	top: 0px;
 }
+
+.bottom {
+    bottom: 0;
+    position: absolute
+}

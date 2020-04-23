@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta content="description" name="description">
+    <meta property="og:title" content="Roman Pobotin - Portfolio"/>
+    <meta property="og:image" content="./static/assets/images/logo.png"/>
+    <meta content="QA automation engineer portfolio" name="description">
     <meta name="google" content="notranslate"/>
     <meta content="Mashup templates have been developped by Orson.io team" name="author">
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/images/logo.png">
     <link href="{{ url_for('static', filename='favicon.ico') }}" rel="icon">
 
     <title>About me</title>
@@ -117,7 +119,9 @@
                                 </p>
                             </div>
                             <div class="col-xs-12 col-md-6">
-                                <img src="./static/assets/images/profil.png" class="img-responsive" alt="">
+                                <h3>
+                                    <img src="./static/assets/images/profil.png" class="img-responsive" alt="">
+                                </h3>
                             </div>
                         </div>
                     </div>
@@ -147,6 +151,9 @@
   document.addEventListener("DOMContentLoaded", function (event) {
      navActivePage();
   });
+
+
+
 
 
 
