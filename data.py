@@ -35,9 +35,21 @@ PROJECTS = {
             {'name': 'sbt_03.png', 'desc': 'Reschedule'}
         ]
     },
+    'qa_skills_bot': {
+        'tech_name': 'qa_skills_bot',
+        'index': '004',
+        'title': 'QA Skills',
+        'desc': 'Telegram qa_skills_bot for the QA Skills project',
+        'git_link': 'https://github.com/Goraved/qa_skills_qa_skills_bot',
+        'site_link': ['https://t.me/qa_skills_qa_skills_bot'],
+        'images': [
+            {'name': 'qa_skills_bot_02.png', 'desc': 'Language comparisons'},
+            {'name': 'qa_skills_bot_03.png', 'desc': 'Statistic by today'}
+        ]
+    },
     'typhon_web': {
         'tech_name': 'typhon_web',
-        'index': '004',
+        'index': '005',
         'title': 'Typhon Web UI',
         'desc': 'Basic test framework to test Web UI using Selenium + Page Object + Allure',
         'git_link': 'https://github.com/Goraved/Typhon-web-UI',
@@ -48,7 +60,7 @@ PROJECTS = {
     },
     'typhon_api': {
         'tech_name': 'typhon_api',
-        'index': '005',
+        'index': '006',
         'title': 'Typhon Web API',
         'desc': 'Basic test framework to test REST API using requests + Allure',
         'git_link': 'https://github.com/Goraved/Typhon-API',
@@ -59,7 +71,7 @@ PROJECTS = {
     },
     'typhon_mobile': {
         'tech_name': 'typhon_mobile',
-        'index': '006',
+        'index': '007',
         'title': 'Typhon Mobile',
         'desc': 'Basic test framework to test Mobile UI using Appium + Page Object + Allure',
         'git_link': 'https://github.com/Goraved/Typhon-Mobile',
@@ -70,7 +82,7 @@ PROJECTS = {
     },
     'typhon_ubuntu': {
         'tech_name': 'typhon_ubuntu',
-        'index': '007',
+        'index': '008',
         'title': 'Typhon Ubuntu',
         'desc': 'Basic test framework to test Ubuntu',
         'git_link': 'https://github.com/Goraved/Typhon-Ubuntu',

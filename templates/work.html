@@ -87,8 +87,10 @@
                 <div class="row">
                     {% for image in images %}
                     <div class="col-xs-12 col-md-6">
-                        <img src="../static/assets/images/{{image['name']}}" class="img-responsive img_max_height"
-                             alt="">
+                        <a href="../static/assets/images/{{image['name']}}" target="_blank"> <img
+                                src="../static/assets/images/{{image['name']}}"
+                                class="img-responsive img_max_height"
+                                alt=""></a>
                         <p>{{image['desc']}}</p>
                     </div>
                     {% endfor %}
@@ -121,6 +123,8 @@
   document.addEventListener("DOMContentLoaded", function (event) {
      navActivePage();
   });
+
+
 
 
 
