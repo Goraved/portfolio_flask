@@ -40,8 +40,8 @@ PROJECTS = {
         'index': '004',
         'title': 'QA Skills',
         'desc': 'Telegram qa_skills_bot for the QA Skills project',
-        'git_link': 'https://github.com/Goraved/qa_skills_qa_skills_bot',
-        'site_link': ['https://t.me/qa_skills_qa_skills_bot'],
+        'git_link': 'https://github.com/Goraved/qa_skills_bot',
+        'site_link': ['https://t.me/qa_skills_bot'],
         'images': [
             {'name': 'qa_skills_bot_02.png', 'desc': 'Language comparisons'},
             {'name': 'qa_skills_bot_03.png', 'desc': 'Statistic by today'}
