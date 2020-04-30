@@ -5461,7 +5461,8 @@ body.minimal {
 }
 
 .section-container-spacer {
-	margin-bottom: 30px
+	margin-bottom: 30px;
+	z-index: -1
 }
 
 @media (min-width:1200px) {
