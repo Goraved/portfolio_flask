@@ -38,7 +38,7 @@ PROJECTS = {
     'qa_skills_bot': {
         'tech_name': 'qa_skills_bot',
         'index': '004',
-        'title': 'QA Skills',
+        'title': 'QA Skills Bot',
         'desc': 'Telegram qa_skills_bot for the QA Skills project',
         'git_link': 'https://github.com/Goraved/qa_skills_bot',
         'site_link': ['https://t.me/qa_skills_bot'],
@@ -61,7 +61,7 @@ PROJECTS = {
     'typhon_api': {
         'tech_name': 'typhon_api',
         'index': '006',
-        'title': 'Typhon Web API',
+        'title': 'Typhon API',
         'desc': 'Basic test framework to test REST API using requests + Allure',
         'git_link': 'https://github.com/Goraved/Typhon-API',
         'images': [
