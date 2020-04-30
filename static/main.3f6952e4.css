@@ -5461,8 +5461,7 @@ body.minimal {
 }
 
 .section-container-spacer {
-	margin-bottom: 30px;
-	z-index: -1
+	margin-bottom: 30px
 }
 
 @media (min-width:1200px) {
@@ -5668,7 +5667,8 @@ textarea {
 	padding: 2rem 5rem;
 	position: relative;
 	width: 80%;
-	margin: -10em auto 20px
+	margin: -10em auto 20px;
+	z-index: 2
 }
 
 @media (max-width:992px) {
