@@ -1,7 +1,7 @@
 PROJECTS = {
     'aqa_topics': {
         'tech_name': 'aqa_topics',
-        'index': '001',
+        'index': 1,
         'title': 'AQA Topics',
         'desc': 'Pet project to share knowledges between AQA engineers.\n Basically, it\'s a storage for the interesting topics for the QA Automation engineers',
         'git_link': 'https://github.com/Goraved/AQA_topics',
@@ -13,7 +13,7 @@ PROJECTS = {
     },
     'qa_skills': {
         'tech_name': 'qa_skills',
-        'index': '002',
+        'index': 2,
         'title': 'QA Skills',
         'desc': 'Pet project to gather all vacancies from Dou.ua, analyze them and make statistics by skills',
         'git_link': 'https://github.com/Goraved/qa_skills',
@@ -25,7 +25,7 @@ PROJECTS = {
     },
     'sbt': {
         'tech_name': 'sbt',
-        'index': '003',
+        'index': 3,
         'title': 'SBT rehearsals',
         'desc': 'Just a site for manage rehearsals schedule of band SBT',
         'git_link': 'https://github.com/Goraved/dodiki',
@@ -37,7 +37,7 @@ PROJECTS = {
     },
     'qa_skills_bot': {
         'tech_name': 'qa_skills_bot',
-        'index': '004',
+        'index': 4,
         'title': 'QA Skills Bot',
         'desc': 'Telegram qa_skills_bot for the QA Skills project',
         'git_link': 'https://github.com/Goraved/qa_skills_bot',
@@ -49,7 +49,7 @@ PROJECTS = {
     },
     'typhon_web': {
         'tech_name': 'typhon_web',
-        'index': '005',
+        'index': 5,
         'title': 'Typhon Web UI',
         'desc': 'Basic test framework to test Web UI using Selenium + Page Object + Allure',
         'git_link': 'https://github.com/Goraved/Typhon-web-UI',
@@ -60,7 +60,7 @@ PROJECTS = {
     },
     'typhon_api': {
         'tech_name': 'typhon_api',
-        'index': '006',
+        'index': 6,
         'title': 'Typhon API',
         'desc': 'Basic test framework to test REST API using requests + Allure',
         'git_link': 'https://github.com/Goraved/Typhon-API',
@@ -71,7 +71,7 @@ PROJECTS = {
     },
     'typhon_mobile': {
         'tech_name': 'typhon_mobile',
-        'index': '007',
+        'index': 7,
         'title': 'Typhon Mobile',
         'desc': 'Basic test framework to test Mobile UI using Appium + Page Object + Allure',
         'git_link': 'https://github.com/Goraved/Typhon-Mobile',
@@ -82,12 +82,48 @@ PROJECTS = {
     },
     'typhon_ubuntu': {
         'tech_name': 'typhon_ubuntu',
-        'index': '008',
+        'index': 8,
         'title': 'Typhon Ubuntu',
         'desc': 'Basic test framework to test Ubuntu',
+        'site_link': ['https://drive.google.com/open?id=1UeT2rl0ZjVL3e2ahZB3tMcIFV6rZKOYB'],
         'git_link': 'https://github.com/Goraved/Typhon-Ubuntu',
         'images': [
             {'name': 'typhon_ubuntu_02.png', 'desc': 'Ubuntu'},
+            {'name': 'allure_icon.png', 'desc': 'Allure'}
+        ]
+    },
+    'qa_wolf': {
+        'tech_name': 'qa_wolf',
+        'index': 9,
+        'title': 'QA Wolf practice',
+        'desc': 'Just a practice with QA Wolf tool',
+        'site_link': ['https://drive.google.com/file/d/1KMECciCLvrv_82OKfQ_B2RY-4dXIjTUN/view?usp=sharing'],
+        'git_link': 'https://github.com/Goraved/qa_wolf_practice',
+        'images': [
+            {'name': 'qa_wolf_02.png', 'desc': 'QA Wolf'},
+        ]
+    },
+    'puppeteer': {
+        'tech_name': 'puppeteer',
+        'index': 10,
+        'title': 'Puppeteer practice',
+        'desc': 'Just a practice with Puppeteer tool',
+        'site_link': ['https://drive.google.com/open?id=1xjmVgFPYKvJn2XNcUjhXEc9mtrPmIsti'],
+        'git_link': 'https://github.com/Goraved/puppeteer_practice',
+        'images': [
+            {'name': 'puppeteer_02.png', 'desc': 'Puppeteer'},
+            {'name': 'allure_icon.png', 'desc': 'Allure'}
+        ]
+    },
+    'playwright': {
+        'tech_name': 'playwright',
+        'index': 11,
+        'title': 'Playwright practice',
+        'desc': 'Just a practice with Playwright tool',
+        'site_link': ['https://drive.google.com/file/d/1P6SXIADubK4k5EXOnd5ZSPeo4n7GEG0p/view'],
+        'git_link': 'https://github.com/Goraved/playwright_practice',
+        'images': [
+            {'name': 'playwright_02.png', 'desc': 'Playwright'},
             {'name': 'allure_icon.png', 'desc': 'Allure'}
         ]
     },

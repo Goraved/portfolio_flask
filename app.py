@@ -1,3 +1,5 @@
+from itertools import islice
+
 from flask import Flask, render_template
 
 from data import PROJECTS, PROJECT_LINKS
@@ -13,13 +15,24 @@ def main():
 @app.route('/work/<work_name>')
 def work(work_name):
     info = PROJECTS[work_name]
-    if 'typhon' not in work_name:
+    if 'site_link' in info:
         return render_template('./work.html', work_name=work_name, title=info['title'], desc=info['desc'],
                                git_link=info['git_link'], site_link=info['site_link'], images=info['images'],
                                projects=PROJECT_LINKS)
     else:
         return render_template('./work.html', work_name=work_name, title=info['title'], desc=info['desc'],
                                git_link=info['git_link'], images=info['images'], projects=PROJECT_LINKS)
+
+
+def chunk(it, size):
+    it = iter(it)
+    return iter(lambda: tuple(islice(it, size)), ())
+
+
+@app.route('/projects')
+def projects():
+    info = list(chunk([PROJECTS[project] for project in PROJECTS], 3))
+    return render_template(f'./projects.html', info=info, len_projects=len(PROJECTS))
 
 
 @app.route('/<page_name>')
