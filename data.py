@@ -127,5 +127,16 @@ PROJECTS = {
             {'name': 'allure_icon.png', 'desc': 'Allure'}
         ]
     },
+    'cypress': {
+        'tech_name': 'cypress',
+        'index': 12,
+        'title': 'Cypress practice',
+        'desc': 'Just a practice with Cypress tool',
+        'site_link': ['https://drive.google.com/open?id=1q6HJw1rIJzzfO6J889Gy_BsDdt80ABma'],
+        'git_link': 'https://github.com/Goraved/cypress_practice',
+        'images': [
+            {'name': 'cypress_02.png', 'desc': 'Cypress'},
+        ]
+    },
 }
 PROJECT_LINKS = [{'link': PROJECTS[project]['tech_name'], 'index': PROJECTS[project]['index']} for project in PROJECTS]
