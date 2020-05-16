@@ -1,2 +1,4 @@
 # QA portfolio site base on the Flask framework
-Just a flask practice
+Portfolio site which contains all my public GitHub projects
+## Link
+https://roman-pobotin.herokuapp.com/
