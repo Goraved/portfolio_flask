@@ -89,7 +89,8 @@ PROJECTS = {
         'git_link': 'https://github.com/Goraved/Typhon-Ubuntu',
         'images': [
             {'name': 'typhon_ubuntu_02.png', 'desc': 'Ubuntu'},
-            {'name': 'allure_icon.png', 'desc': 'Allure'}
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+            {'name': 'docker_01.png', 'desc': 'Docker'},
         ]
     },
     'qa_wolf': {
@@ -112,7 +113,8 @@ PROJECTS = {
         'git_link': 'https://github.com/Goraved/puppeteer_practice',
         'images': [
             {'name': 'puppeteer_02.png', 'desc': 'Puppeteer'},
-            {'name': 'allure_icon.png', 'desc': 'Allure'}
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+            {'name': 'docker_01.png', 'desc': 'Docker'},
         ]
     },
     'playwright': {
@@ -124,7 +126,8 @@ PROJECTS = {
         'git_link': 'https://github.com/Goraved/playwright_practice',
         'images': [
             {'name': 'playwright_02.png', 'desc': 'Playwright'},
-            {'name': 'allure_icon.png', 'desc': 'Allure'}
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+            {'name': 'docker_01.png', 'desc': 'Docker'},
         ]
     },
     'cypress': {
