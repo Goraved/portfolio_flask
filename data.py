@@ -141,5 +141,17 @@ PROJECTS = {
             {'name': 'cypress_02.png', 'desc': 'Cypress'},
         ]
     },
+    'report_portal': {
+        'tech_name': 'report_portal',
+        'index': 13,
+        'title': 'Report Portal practice',
+        'desc': 'Just a practice with Report Portal reporting tool',
+        'site_link': ['https://drive.google.com/file/d/1xX_7hwz_cA4EpXnCQNJh1xbTf8yXiR-H/view?usp=sharing'],
+        'git_link': 'https://github.com/Goraved/report_portal_practice',
+        'images': [
+            {'name': 'report_portal_02.png', 'desc': 'ReportPortal'},
+            {'name': 'selenium_01.png', 'desc': 'Selenium'},
+        ]
+    },
 }
 PROJECT_LINKS = [{'link': PROJECTS[project]['tech_name'], 'index': PROJECTS[project]['index']} for project in PROJECTS]
