@@ -79,7 +79,7 @@
                                 <div class="row">
                                     {% for project in chunk %}
                                     <div class="col-sm-4">
-                                        <a href="./work/{{project['tech_name']}}" title=""
+                                        <a href="./project/{{project['tech_name']}}" title=""
                                            class="black-image-project-hover">
                                             <img src="./static/assets/images/{{project['tech_name']}}_01.png" alt=""
                                                  class="img-responsive">
@@ -88,7 +88,7 @@
                                             <h4>{{project['index']}}/{{len_projects}}</h4>
                                             <h3>{{project['title']}}</h3>
                                             <p>{{project['description']}}</p>
-                                            <a href="./work/{{project['tech_name']}}" title="" class="btn btn-default">Discover</a>
+                                            <a href="./project/{{project['tech_name']}}" title="" class="btn btn-default">Discover</a>
                                         </div>
                                     </div>
                                     {% endfor %}

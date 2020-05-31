@@ -12,15 +12,15 @@ def main():
     return render_template('./index.html')
 
 
-@app.route('/work/<work_name>')
-def work(work_name):
-    info = PROJECTS[work_name]
+@app.route('/project/<project_name>')
+def project(project_name):
+    info = PROJECTS[project_name]
     if 'site_link' in info:
-        return render_template('./work.html', work_name=work_name, title=info['title'], desc=info['desc'],
+        return render_template('./project.html', work_name=project_name, title=info['title'], desc=info['desc'],
                                git_link=info['git_link'], site_link=info['site_link'], images=info['images'],
                                projects=PROJECT_LINKS)
     else:
-        return render_template('./work.html', work_name=work_name, title=info['title'], desc=info['desc'],
+        return render_template('./project.html', work_name=project_name, title=info['title'], desc=info['desc'],
                                git_link=info['git_link'], images=info['images'], projects=PROJECT_LINKS)
 
 
