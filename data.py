@@ -55,7 +55,8 @@ PROJECTS = {
         'git_link': 'https://github.com/Goraved/Typhon-web-UI',
         'images': [
             {'name': 'typhon_web_02.png', 'desc': 'Selenium'},
-            {'name': 'allure_icon.png', 'desc': 'Allure'}
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+            {'name': 'python.png', 'desc': 'Python'},
         ]
     },
     'typhon_api': {
@@ -66,7 +67,8 @@ PROJECTS = {
         'git_link': 'https://github.com/Goraved/Typhon-API',
         'images': [
             {'name': 'typhon_api_02.png', 'desc': 'requests lib for the REST API'},
-            {'name': 'allure_icon.png', 'desc': 'Allure'}
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+            {'name': 'python.png', 'desc': 'Python'},
         ]
     },
     'typhon_mobile': {
@@ -77,7 +79,8 @@ PROJECTS = {
         'git_link': 'https://github.com/Goraved/Typhon-Mobile',
         'images': [
             {'name': 'typhon_mobile_02.png', 'desc': 'Appium'},
-            {'name': 'allure_icon.png', 'desc': 'Allure'}
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+            {'name': 'python.png', 'desc': 'Python'},
         ]
     },
     'typhon_ubuntu': {
@@ -91,6 +94,7 @@ PROJECTS = {
             {'name': 'typhon_ubuntu_02.png', 'desc': 'Ubuntu'},
             {'name': 'allure_icon.png', 'desc': 'Allure'},
             {'name': 'docker_01.png', 'desc': 'Docker'},
+            {'name': 'python.png', 'desc': 'Python'},
         ]
     },
     'qa_wolf': {
@@ -130,9 +134,23 @@ PROJECTS = {
             {'name': 'docker_01.png', 'desc': 'Docker'},
         ]
     },
+    'playwright_python': {
+        'tech_name': 'playwright_python',
+        'index': 12,
+        'title': 'Playwright Python practice',
+        'desc': 'Just a practice with Playwright-Python tool',
+        'site_link': ['https://drive.google.com/file/d/1K2uUlXASjPOiCbCbYkqmuHN26em7bPHs/view'],
+        'git_link': 'https://github.com/Goraved/playwright_python_practice',
+        'images': [
+            {'name': 'playwright_02.png', 'desc': 'Playwright'},
+            {'name': 'python.png', 'desc': 'Python'},
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+            {'name': 'docker_01.png', 'desc': 'Docker'},
+        ]
+    },
     'cypress': {
         'tech_name': 'cypress',
-        'index': 12,
+        'index': 13,
         'title': 'Cypress practice',
         'desc': 'Just a practice with Cypress tool',
         'site_link': ['https://drive.google.com/open?id=1q6HJw1rIJzzfO6J889Gy_BsDdt80ABma'],
@@ -143,7 +161,7 @@ PROJECTS = {
     },
     'report_portal': {
         'tech_name': 'report_portal',
-        'index': 13,
+        'index': 14,
         'title': 'Report Portal practice',
         'desc': 'Just a practice with Report Portal reporting tool',
         'site_link': ['https://drive.google.com/file/d/1xX_7hwz_cA4EpXnCQNJh1xbTf8yXiR-H/view?usp=sharing'],
