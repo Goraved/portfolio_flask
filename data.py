@@ -171,5 +171,19 @@ PROJECTS = {
             {'name': 'selenium_01.png', 'desc': 'Selenium'},
         ]
     },
+    'testcafe': {
+        'tech_name': 'testcafe',
+        'index': 15,
+        'title': 'TestCafe practice',
+        'desc': 'Just a practice with TestCafe tool',
+        'site_link': ['https://drive.google.com/file/d/1SgnmIUl5yKxP5UyuYEyUJdXI8sJ-eywG/view?usp=sharing'],
+        'git_link': 'https://github.com/Goraved/testcafe_practice',
+        'images': [
+            {'name': 'testcafe_01.png', 'desc': 'TestCafe'},
+            {'name': 'js.png', 'desc': 'Javascript'},
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+            {'name': 'docker_01.png', 'desc': 'Docker'},
+        ]
+    },
 }
 PROJECT_LINKS = [{'link': PROJECTS[project]['tech_name'], 'index': PROJECTS[project]['index']} for project in PROJECTS]
