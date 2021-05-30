@@ -185,5 +185,18 @@ PROJECTS = {
             {'name': 'docker_01.png', 'desc': 'Docker'},
         ]
     },
+    'webdriverio': {
+        'tech_name': 'webdriverio',
+        'index': 16,
+        'title': 'webdriver.io practice',
+        'desc': 'Just a practice with webdriver.io tool',
+        'site_link': ['https://drive.google.com/file/d/1m1f4s7U2LItwzyc2NndVXDQvP5LVSaO7/view?usp=sharing'],
+        'git_link': 'https://github.com/Goraved/webdriverio_practice',
+        'images': [
+            {'name': 'webdriverio_01.png', 'desc': 'webdriver.io'},
+            {'name': 'js.png', 'desc': 'Javascript'},
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+        ]
+    },
 }
 PROJECT_LINKS = [{'link': PROJECTS[project]['tech_name'], 'index': PROJECTS[project]['index']} for project in PROJECTS]
