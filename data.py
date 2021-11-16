@@ -198,5 +198,17 @@ PROJECTS = {
             {'name': 'allure_icon.png', 'desc': 'Allure'},
         ]
     },
+    'behave': {
+        'tech_name': 'behave',
+        'index': 17,
+        'title': 'behave practice',
+        'desc': 'Just a practice with behave tool',
+        'git_link': 'https://github.com/Goraved/behave_practice',
+        'images': [
+            {'name': 'behave_02.png', 'desc': 'behave'},
+            {'name': 'python.png', 'desc': 'Python'},
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+        ]
+    },
 }
 PROJECT_LINKS = [{'link': PROJECTS[project]['tech_name'], 'index': PROJECTS[project]['index']} for project in PROJECTS]
