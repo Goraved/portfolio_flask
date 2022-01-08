@@ -210,5 +210,17 @@ PROJECTS = {
             {'name': 'allure_icon.png', 'desc': 'Allure'},
         ]
     },
+    'bdd_to_pytest': {
+        'tech_name': 'bdd_to_pytest',
+        'index': 18,
+        'title': 'BDD to Pytest parser',
+        'desc': 'Simple parser to convert BDD Gherkin feature style files into the pytest with Allure test style files',
+        'git_link': 'https://github.com/Goraved/bdd_to_pytest',
+        'images': [
+            {'name': 'bdd.png', 'desc': 'BDD'},
+            {'name': 'python.png', 'desc': 'Python'},
+            {'name': 'allure_icon.png', 'desc': 'Allure'},
+        ]
+    },
 }
 PROJECT_LINKS = [{'link': PROJECTS[project]['tech_name'], 'index': PROJECTS[project]['index']} for project in PROJECTS]
