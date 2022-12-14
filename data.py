@@ -5,7 +5,7 @@ PROJECTS = {
         'title': 'AQA Topics',
         'desc': 'Pet project to share knowledges between AQA engineers.\n Basically, it\'s a storage for the interesting topics for the QA Automation engineers',
         'git_link': 'https://github.com/Goraved/AQA_topics',
-        'site_link': ['https://aqa-topics.herokuapp.com/'],
+        'site_link': ['https://aqa-topics.vercel.app/'],
         'images': [
             {'name': 'aqa_topics_02.png', 'desc': 'Search page'},
             {'name': 'aqa_topics_03.png', 'desc': 'Admin page'}
@@ -15,7 +15,7 @@ PROJECTS = {
         'tech_name': 'qa_skills',
         'index': 2,
         'title': 'QA Skills',
-        'desc': 'Pet project to gather all vacancies from Dou.ua, analyze them and make statistics by skills',
+        'desc': 'Pet project to gather all vacancies from Dou.ua, analyze them and make statistics by skills.\n\n --> Need to migrate from heroku to another free cloud...',
         'git_link': 'https://github.com/Goraved/qa_skills',
         'site_link': ['https://qa-skills.herokuapp.com/'],
         'images': [
@@ -27,7 +27,7 @@ PROJECTS = {
         'tech_name': 'sbt',
         'index': 3,
         'title': 'SBT rehearsals',
-        'desc': 'Just a site for manage rehearsals schedule of band SBT',
+        'desc': 'Just a site for manage rehearsals schedule of band SBT.\n\n --> Need to migrate from heroku to another free cloud...',
         'git_link': 'https://github.com/Goraved/dodiki',
         'site_link': ['https://dodiki.herokuapp.com/'],
         'images': [
