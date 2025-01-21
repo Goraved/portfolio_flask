@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="Roman Pobotin - AQA Manifesto" property="og:title"/>
+    <meta content="./static/assets/images/logo.png" property="og:image"/>
+    <meta content="AQA Manifesto" name="description">
+    <meta content="notranslate" name="google"/>
+    <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+    <!-- Disable tap highlight on IE -->
+    <meta content="no" name="msapplication-tap-highlight">
+
+    <link href="./static/assets/images/logo.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="{{ url_for('static', filename='favicon.ico') }}" rel="icon">
+    <title>Маніфест QA Automation (SDET)</title>
+    <!-- Bootstrap CSS (if not already included in your project) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your main CSS file from GitHub -->
+    <link href="static/main.3f6952e4.css" rel="stylesheet">
+</head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+        <div class="container">
+            <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse"
+                    type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav ">
+                    <li><a href="./" title="">01 : Home</a></li>
+                    <li><a href="./projects" title="">02 : Projects</a></li>
+                    <li><a href="./about" title="">03 : About me</a></li>
+                    <li><a href="./contact" title="">04 : Contact</a></li>
+                    <li><a href="./manifesto" title="">05 : AQA Manifesto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Content container -->
+<div class="container" style="margin-top: 90px;">
+    <!-- You can adjust the margin-top to ensure the content
+         doesn't get hidden under the fixed navbar -->
+
+    <h1 class="text-center">Маніфест QA Automation (SDET)</h1>
+    <p class="text-center"><em>як рушій безперервного підвищення якості,<br>
+        інтегровані ідеї з ISTQB® Advanced TAE &amp; Test Manager</em></p>
+    <p class="text-center"><em>Доповнено концепціями з “Introducing BDD” (Dan North),<br>
+        Test Automation Manifesto (Smith &amp; Meszaros, 2003) та “xUnit Test Patterns”</em></p>
+    <p class="text-center"><em><a href="/static/QA_Automation.pdf" rel="noopener noreferrer" target="_blank">Завантажити
+        PDF</a></em></p>
+    <hr>
+
+    <!-- Now place your manifesto sections here, for example: -->
+    <h2 id="vstup">Вступ</h2>
+    <p>
+        Сучасна розробка ПЗ вимагає від тестувальників значно ширшого набору навичок,
+        ніж просто знання базових методів тестування. Роль <strong>QA Automation (SDET)</strong> — це
+        цілісне об’єднання декількох напрямів:
+    </p>
+    <ul>
+        <li><strong>QA</strong> (розуміння видів тестування, підходів і процесів),</li>
+        <li><strong>Development</strong> (глибокі навички програмування, патерни, архітектура),</li>
+        <li><strong>DevOps</strong> (CI/CD, контейнеризація, моніторинг, логування).</li>
+    </ul>
+    <p>
+        Основна ідея цього Маніфесту:
+        <strong>QA Automation — не лише «перевірка продукту», а й оптимізація всього циклу розробки</strong>
+        для досягнення швидких і якісних релізів, із урахуванням підходів SDET, керування тестами
+        (ISTQB® CTAL-TM) та побудови структурованої автоматизації (ISTQB® CTAL-TAE). Також у цьому
+        документі розглядаються ідеї <strong>Behavior-Driven Development</strong> (Dan North),
+        <strong>Test Automation Manifesto</strong> (Smith &amp; Meszaros) та головні тези з
+        <strong>xUnit Test Patterns</strong>.
+    </p>
+
+    <!-- Основні принципи -->
+    <h2 id="osnovni-principy">Основні принципи</h2>
+    <h3>QA Automation — не просто «тести», а оптимізація процесів</h3>
+    <ol>
+        <li>
+            <strong>Цілісне бачення розробки</strong><br/>
+            Автоматизатор має розуміти весь цикл: від ідеї та дизайну до деплойменту й підтримки.
+            Сприяє виявленню «вузьких місць», покращує командну взаємодію, пришвидшує <em>delivery</em>.
+        </li>
+        <li>
+            <strong>Прискорення та гнучкість</strong><br/>
+            Правильно налаштовані CI/CD-пайплайни, DevOps-інструменти та автоматизація рутинних
+            операцій дають змогу швидко випускати оновлення без втрати якості.
+        </li>
+        <li>
+            <strong>Зменшення ручної роботи</strong><br/>
+            Мета — позбутися «клікаторства» та повторюваних завдань. Все, що можна автоматизувати,
+            має бути автоматизовано.
+        </li>
+    </ol>
+
+    <h3>SDET: перетин QA, Development, DevOps</h3>
+    <ul>
+        <li><strong>QA-аспект:</strong>
+            <ul>
+                <li>Знання різних видів тестів: юніт, інтеграційних, E2E, перформанс, безпека.</li>
+                <li>Уміння розробляти тестову стратегію, пропонувати покращення процесів (TestOps).</li>
+            </ul>
+        </li>
+        <li><strong>Development-аспект:</strong>
+            <ul>
+                <li>Володіння мовами програмування (бажано декількома), знання алгоритмів, структур даних, ООП, SOLID,
+                    KISS, DRY, YAGNI тощо.
+                </li>
+                <li>Розуміння патернів проєктування (Page Object, Factory, Singleton), уміння створювати додаткові
+                    інструменти (генератори даних, кастомні репортери, логгери).
+                </li>
+            </ul>
+        </li>
+        <li><strong>DevOps-аспект:</strong>
+            <ul>
+                <li>Налаштування CI/CD (Jenkins, GitLab CI, GitHub Actions, Azure DevOps).</li>
+                <li>Контейнеризація (Docker, Kubernetes), інтеграція з моніторингом, логуванням.</li>
+                <li>Вміння оперативно доставляти продукт і відслідковувати його стабільність.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Програмування як обов’язкова складова</h3>
+    <ol>
+        <li>
+            <strong>Тести + інструменти</strong><br/>
+            Автоматизатор не повинен обмежуватися написанням тестів. Він має створювати скрипти,
+            утиліти та фреймворки, що допомагають у тестуванні та розвитку проєкту загалом.
+        </li>
+        <li>
+            <strong>Робота з різними мовами</strong><br/>
+            Швидка адаптація до нових технологій: React, Angular, Python, Go, Java — залежно від потреб проєкту.
+        </li>
+        <li>
+            <strong>Постійна практика</strong><br/>
+            Рішення алгоритмічних задач
+            (<a href="https://leetcode.com/">LeetCode</a>, <a href="https://www.codewars.com/">CodeWars</a>)
+            підтримує форму та дозволяє швидко писати якісний код навіть у стресових ситуаціях.
+        </li>
+    </ol>
+
+    <h3>T-Shape, TestOps та аналітика</h3>
+    <ol>
+        <li>
+            <strong>T-Shape фахівець</strong><br/>
+            «Вертикаль» — глибокі знання тестування (фреймворки, методології).<br/>
+            «Горизонталь» — базове чи середнє розуміння суміжних сфер: архітектура, DevOps, UX, бази даних.
+        </li>
+        <li>
+            <strong>TestOps та моніторинг</strong><br/>
+            Налаштування метрик: coverage, build health, release frequency, defect leakage, MTTR.<br/>
+            Аналітика в реальному часі: відстеження продуктивності та стабільності тестового середовища.<br/>
+            Постійне покращення процесів, а не латання точкових «дір».
+        </li>
+        <li>
+            <strong>Безперервне вдосконалення</strong><br/>
+            Культура регулярного покращення якості: аналіз, ретроспективи, швидкі експерименти
+            та впровадження корисних змін.
+        </li>
+    </ol>
+
+    <!-- BDD section -->
+    <h2>BDD: Правильне використання або взагалі не використання</h2>
+    <h3>Загальна ідея BDD</h3>
+    <p>
+        BDD (<em>Behavior-Driven Development</em>) — це методологія, що спирається на тісну комунікацію між
+        бізнес-сторонами (Product Owner, Business Analyst), розробниками й тестувальниками.<br/>
+        Згідно з
+        <a href="https://dannorth.net/introducing-bdd/"><em>Introducing BDD (Dan North)</em></a>,
+        основна увага приділяється поведінці системи, а не реалізації.
+    </p>
+    <ul>
+        <li><strong>Спільна мова (Ubiquitous Language):</strong> Учасники працюють над <em>Given / When / Then</em>
+            прикладами, що описують <em>що</em> система має робити, а не <em>як</em>.
+        </li>
+        <li><strong>Фокус на «прикладах»:</strong> Приклади (Scenario) описуються мовою бізнесу, уникаючи технічних
+            деталей.
+        </li>
+        <li><strong>Спільна відповідальність:</strong> Усі зацікавлені сторони формулюють правила поведінки та приклади.
+            QA орієнтується на підтвердження їх виконання, а розробники — на реалізацію.
+        </li>
+    </ul>
+
+    <h3>Правильне використання BDD</h3>
+    <ul>
+        <li><strong>Сценарії на випередження:</strong> Сценарії зазвичай пише PO або BA, а розробники й тестувальники
+            уточнюють деталі.
+        </li>
+        <li><strong>Впровадження функціоналу за попередніми сценаріями:</strong> Якщо тест (Given / When / Then)
+            успішний — продукт відповідає очікуванням.
+        </li>
+        <li><strong>Уникайте «штучного» BDD:</strong> Якщо команда не має можливості (чи бажання) реалізувати справжній
+            цикл співпраці, краще обійтися більш простим форматом тестів.
+        </li>
+    </ul>
+
+    <!-- Test Cases as Code -->
+    <h2>Test Cases as Code</h2>
+    <ul>
+        <li>Тест-кейси мають бути <em>інтегровані</em> в код, щоб уникнути дублювання інформації і «синхронізації» між
+            тест-менеджмент-системами та автотестами.
+        </li>
+        <li>Оновлення тестів відбувається одночасно з оновленням коду: це знижує ризик розсинхронізації та сприяє
+            прозорості.
+        </li>
+    </ul>
+
+    <!-- Культура співпраці -->
+    <h2>Культура співпраці</h2>
+    <ol>
+        <li>
+            <strong>QA як частина команди розробки</strong>
+            <ul>
+                <li>QA — це не стороння роль, а ключовий учасник команди, який формує якість продукту.</li>
+                <li>Тестувальник — не той, хто «чекає на функціонал, щоб гавкати на помилки». Це <em>інженер</em>, що
+                    допомагає будувати рішення, передбачає і усуває ризики <strong>на ранніх етапах</strong>.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>TDD як ціль</strong>
+            <ul>
+                <li>QA сприяє впровадженню TDD (Test-Driven Development), коли розробники пишуть <em>юнінт</em>-тести ще
+                    до реалізації функціоналу.
+                </li>
+                <li>Знижує кількість дефектів «у полі» і робить продукт більш передбачуваним у розробці.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- Утопічна ідея -->
+    <h2>Утопічна ідея: «QA, що виконав місію, може йти далі»</h2>
+    <ol>
+        <li>
+            <strong>Навчити команду «жити без QA»</strong><br/>
+            Ідеальний сценарій: розробники розуміють цінність тестів і пишуть їх самі, а процеси настільки
+            відпрацьовані, що немає потреби в постійному ручному контролі.
+        </li>
+        <li>
+            <strong>Спільна відповідальність</strong><br/>
+            «За якість відповідає лише QA» — шкідливе мислення. Мета — <em>shared responsibility</em>,
+            де кожен дбає про якість.
+        </li>
+        <li>
+            <strong>Роль консультанта</strong><br/>
+            QA стає «позаштатним» ментором, до якого звертаються, коли потрібно розширити тестову стратегію
+            чи побудувати нову систему моніторингу.
+        </li>
+    </ol>
+
+    <!-- Team Vision -->
+    <h2>Team Vision: shift-left та глибша інтеграція</h2>
+    <ol>
+        <li>
+            <strong>Engineer First, Not Just Testers</strong><br/>
+            Усі QA-інженери розглядаються як повноцінні інженери. Менше ручних перевірок, більше технічних
+            навичок та повноцінного розвитку.
+        </li>
+        <li>
+            <strong>T-Shape Skill Development</strong><br/>
+            Кожен член команди є «універсальним солдатом» з глибокою основною спеціалізацією (наприклад,
+            у тестуванні) та широким спектром знань у суміжних областях (DevOps, Data, UI тощо).
+        </li>
+        <li>
+            <strong>Everything is Possible to Automate</strong><br/>
+            Якщо зустрічаємо задачу, яку на перший погляд неможливо автоматизувати, треба шукати творчі
+            рішення або чітко доводити неможливість.
+        </li>
+        <li>
+            <strong>Adaptability to New Technologies</strong><br/>
+            Використання ШІ (наприклад,
+            <a href="https://chat.openai.com/">ChatGPT</a>) для прискорення пошуку рішень, експериментів
+            із новими бібліотеками та фреймворками.
+        </li>
+        <li>
+            <strong>Enthusiasm and Ownership</strong><br/>
+            Ніхто не каже «Це не моя робота». Якщо проблема стосується загального процесу, кожен має
+            право та можливість її вирішувати.
+        </li>
+    </ol>
+
+    <!-- Приклади з реальних ситуацій -->
+    <h2>Приклади з реальних ситуацій (без коду)</h2>
+    <h3>1. Оптимізація регресійних тестів</h3>
+    <p>
+        <strong>Ситуація:</strong> Тривалий регрес призводить до затримки релізів.<br/>
+        <strong>Дії QA/SDET:</strong> Налаштування паралельного запуску та поділ тестів на
+        <em>smoke/регрес</em>. Smoke-тести запускаються на кожен коміт, а повний регрес — після закриття великих
+        задач.<br/>
+        <strong>Результат:</strong> Скорочення часу зворотного зв’язку, швидша доставка функціоналу.
+    </p>
+
+    <h3>2. Загальна відповідальність за якість</h3>
+    <p>
+        <strong>Ситуація:</strong> У команді вважають, що «тести — це зона QA». Результат — пропускання дефектів,
+        які могли б виловити розробники на рівні юніт-тестів.<br/>
+        <strong>Дії:</strong> QA проводить воркшопи з TDD, навчає розробників писати базові тести.<br/>
+        <strong>Результат:</strong> Менше дефектів «просочується» далі, а QA може сконцентруватися
+        на складніших інтеграційних сценаріях.
+    </p>
+
+    <h3>3. Покращення build health</h3>
+    <p>
+        <strong>Ситуація:</strong> Часті «червоні» збірки через нестабільні (flaky) тести.<br/>
+        <strong>Дії:</strong> Запровадження маркерів для flaky-тестів, регулярний аналіз логів,
+        виправлення або видалення ненадійних сценаріїв.<br/>
+        <strong>Результат:</strong> Стабільні пайплайни, менше фальшивих «аварій», швидший цикл зворотного зв’язку.
+    </p>
+
+    <!-- ISTQB CTAL-TAE -->
+    <h2>Додаткові ідеї з ISTQB Advanced Level Test Automation Engineer (TAE)</h2>
+    <p>
+        Нижче викладено кілька ключових моментів із
+        <a href="https://astqb.org/assets/documents/Advanced-Test-Automation-Engineer-Syllabus-GA-2016.pdf">ISTQB
+            CTAL-TAE</a>:
+    </p>
+    <ol>
+        <li>
+            <strong>Business Case for Automation</strong><br/>
+            Автоматизація має бути <em>економічно виправданою</em>.
+            <ul>
+                <li>Визначення потенційного скорочення витрат.</li>
+                <li>Можливі вигоди (прискорення релізів, зниження ручної рутини).</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Automation Architecture (TAA)</strong>
+            <ul>
+                <li>Використовувати модульний підхід (<strong>Layered Architecture</strong>: шари для управління даними,
+                    логікою тестів).
+                </li>
+                <li><em>Design for Testability</em>: продукт має бути тестопридатним (mock-и, API-хуки).</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Implementation and Integration</strong>
+            <ul>
+                <li><strong>Вибір фреймворку:</strong> мова, можливості звітності, CI/CD.</li>
+                <li><strong>Pipeline:</strong> безперервна інтеграція, регулярні запуски.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Metrics and Monitoring</strong>
+            <ul>
+                <li><em>Coverage</em>, <em>defect detection rate</em>, <em>flake rate</em>.</li>
+                <li><em>MTTA</em> (Mean Time To Acknowledge), <em>MTTR</em> (Mean Time To Repair).</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Maintaining the Automated Solution</strong>
+            <ul>
+                <li>Регулярний <strong>рефакторинг</strong> тестів, оновлення селекторів.</li>
+                <li>Відстежування версій тестів разом із версіями продукту.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Transition Manual to Automated</strong>
+            <ul>
+                <li>Не варто <em>сліпо</em> конвертувати всі мануальні кейси.</li>
+                <li>Почати з регресійних тестів, розширювати автоматизацію поступово.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- ISTQB CTAL-TM -->
+    <h2>Ідеї з ISTQB® Certified Tester Advanced Level Test Manager (v3.0)</h2>
+    <p>
+        Нижче викладено тези з
+        <a href="https://swisstestingboard.org/wp-content/uploads/2024/05/ISTQB_CTAL-TM_Syllabus_v3.0.pdf">ISTQB
+            CTAL-TM</a>,
+        що доповнюють наш Маніфест принципами управління тестуванням:
+    </p>
+
+    <h3>1. Призначення автоматизації тестування</h3>
+    <ul>
+        <li><strong>Повторюваність та консистентність:</strong> Тести на різних версіях ПЗ і середовищах повинні
+            виконуватися передбачувано.
+        </li>
+        <li><strong>Мета автоматизації:</strong>
+            <ul>
+                <li>Підвищення ефективності тестування.</li>
+                <li>Розширення охоплення функціональності.</li>
+                <li>Зниження загальної вартості тестування.</li>
+                <li>Виконання тестів, які неможливо реалізувати вручну (паралельні, реального часу).</li>
+                <li>Скорочення часу на тестування, збільшення частоти тестувань.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>2. Фактори успіху автоматизації</h3>
+    <ol>
+        <li>
+            <strong>Архітектура автоматизації тестування (TAA):</strong>
+            <ul>
+                <li>Проєктування з урахуванням вимог до підтримки, продуктивності, простоти навчання.</li>
+                <li>Забезпечення сумісності між TAS (Test Automation Solution) та архітектурою SUT.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Тестованість SUT:</strong>
+            <ul>
+                <li>Розділення GUI від бізнес-логіки.</li>
+                <li>Публічність API та інтерфейсів для тестування.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Стратегія автоматизації тестування:</strong>
+            <ul>
+                <li>Практичний підхід, що враховує підтримку, витрати й ризики.</li>
+                <li>Комбінація GUI та API-тестів для перевірки консистентності.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Фреймворк автоматизації (TAF):</strong>
+            <ul>
+                <li>Легкість використання, документованість, модульність.</li>
+                <li>Підтримка звітності та налагодження.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Підтримка середовища тестування:</strong>
+            <ul>
+                <li>Контрольоване середовище, моніторинг і відновлення SUT під час тестів.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>3. Ризики та обмеження автоматизації</h3>
+    <ul>
+        <li>Висока початкова вартість розробки TAS.</li>
+        <li>Не всі ручні тести можна автоматизувати.</li>
+        <li>Залежність від змін у середовищі/інтерфейсах SUT.</li>
+        <li>Не замінює дослідницьке/евристичне тестування.</li>
+    </ul>
+
+    <h3>4. Ефективна архітектура TAS</h3>
+    <ol>
+        <li>
+            <strong>Багаторівнева архітектура TAS:</strong>
+            <ul>
+                <li>Шар генерації тестів: дизайн кейсів, авто-генерація на основі моделей.</li>
+                <li>Шар визначення тестів: процедури та дані для тестів.</li>
+                <li>Шар виконання тестів: запуск, логування результатів.</li>
+                <li>Шар адаптації: інтеграція з SUT (API, протоколи, емулятори).</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Принципи архітектури:</strong>
+            <ul>
+                <li>Single Responsibility.</li>
+                <li>Розширюваність без модифікацій.</li>
+                <li>Абстракція для сумісності з різними інструментами.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>5. Метрики та звітність</h3>
+    <ul>
+        <li>Відстеження продуктивності TAS, часу виконання, покриття, логування.</li>
+        <li>Звіти: надавати стейкхолдерам інформативні дані про стан якості.</li>
+    </ul>
+
+    <h3>6. Перехід від ручного до автоматизованого тестування</h3>
+    <ul>
+        <li>Визначення критеріїв для автоматизації (стабільність, обсяг, частота).</li>
+        <li>Почати з регресійних тестів, далі — нові функції.</li>
+        <li>Використання негативних тестів.</li>
+    </ul>
+
+    <h3>7. Безперервне вдосконалення TAS</h3>
+    <ul>
+        <li>Постійне оновлення тестів відповідно до змін у SUT.</li>
+        <li>Видалення застарілих тестів, оптимізація процесів.</li>
+    </ul>
+
+    <h3>8. Взаємодія автоматизації з SUT</h3>
+    <ul>
+        <li>Використання різних рівнів доступу: GUI, API, протоколи, сервіси.</li>
+        <li>Дизайн SUT для тестованості (додаткові інтерфейси, моніторинг станів).</li>
+    </ul>
+
+    <h3>9. Ключові підходи до автоматизації</h3>
+    <ul>
+        <li>Capture/Playback (початкові записи взаємодій).</li>
+        <li>Data-Driven Testing (дані в окремих файлах).</li>
+        <li>Keyword-Driven Testing (використання ключових слів у сценаріях).</li>
+    </ul>
+
+    <!-- Test Automation Manifesto -->
+    <h2>Test Automation Manifesto (2003, Smith &amp; Meszaros)</h2>
+    <p>
+        <em>Шон Сміт та Жерар Месзарош</em> представили «Маніфест автоматизації тестування»
+        на конференції XP/Agile Universe у 2003 році. Основні принципи:
+    </p>
+    <ol>
+        <li>
+            <strong>Писати тести спочатку (Write the Tests First)</strong><br/>
+            Розробка тестів перед написанням коду сприяє створенню тестованого дизайну
+            та зменшує витрати на налагодження.
+        </li>
+        <li>
+            <strong>Проектувати для тестованості (Design for Testability)</strong><br/>
+            Забезпечення того, щоб система була легко тестованою, спрощує процес автоматизації
+            та підвищує якість тестів.
+        </li>
+        <li>
+            <strong>Використовувати основний інтерфейс (Use the Front Door First)</strong><br/>
+            Тестування через публічний інтерфейс системи знижує залежність від внутрішньої реалізації
+            й підвищує надійність тестів.
+        </li>
+        <li>
+            <strong>Передавати намір (Communicate Intent)</strong><br/>
+            Тести мають бути зрозумілими та відображати очікувану поведінку,
+            що полегшує їх підтримку й використання як документації.
+        </li>
+        <li>
+            <strong>Не модифікувати тестовану систему (Don’t Modify the SUT)</strong><br/>
+            Уникати змін у системі під час тестування, щоб упевнитися, що перевіряється реальна поведінка
+            продукту, а не його кастомізована версія.
+        </li>
+        <li>
+            <strong>Тримати тести незалежними (Keep Tests Independent)</strong><br/>
+            Кожен тест мусить бути автономним, щоб зміни в одному тесті не впливали на інші —
+            це забезпечує стабільність та надійність набору.
+        </li>
+    </ol>
+
+    <!-- xUnit Test Patterns -->
+    <h2>Додаткові ідеї з “xUnit Test Patterns” (G. Meszaros)</h2>
+    <h3>Chapter 3: Goals of Test Automation</h3>
+    <ul>
+        <li><strong>Швидкий зворотний зв’язок (Fast Feedback):</strong> Тести мають виконуватися швидко, даючи миттєву
+            оцінку коду.
+        </li>
+        <li><strong>Попередження дефектів (Defect Prevention):</strong> Регулярний запуск тестів допомагає запобігати
+            інтеграційним проблемам.
+        </li>
+        <li><strong>Покращення якості коду (Improved Code Quality):</strong> Наявність автотестів стимулює розробників
+            писати більш чистий і модульний код.
+        </li>
+        <li><strong>Економія ресурсів (Cost Reduction):</strong> Хоча стартові витрати можуть бути високими, у
+            довгостроковій перспективі автоматизація знижує загальні витрати.
+        </li>
+        <li><strong>Повторюваність і надійність (Repeatability and Reliability):</strong> Автотести мають однакові
+            результати при кожному запуску.
+        </li>
+        <li><strong>Можливість рефакторингу (Facilitate Refactoring):</strong> З наявними тестами розробники впевненіше
+            змінюють код.
+        </li>
+        <li><strong>Підтримка Agile-практик:</strong> Часті релізи, continuous integration тощо.</li>
+        <li><strong>Документація поведінки (Documenting Behavior):</strong> Тести описують очікувану поведінку системи в
+            реальному часі.
+        </li>
+    </ul>
+
+    <h3>Chapter 4: Philosophy of Test Automation</h3>
+    <ul>
+        <li><strong>Тести як актив (Tests as Assets):</strong> Вартує розглядати тести як довгострокову інвестицію.</li>
+        <li><strong>Стійкість до змін (Resilience to Change):</strong> Тести мають бути гнучкими до змін у коді.</li>
+        <li><strong>Постійна цінність (Sustained Value):</strong> Навіть через роки автотести лишаються корисними.</li>
+        <li><strong>Уникнення пасток (Avoiding Automation Pitfalls):</strong> Не всі проблеми вирішує автоматизація,
+            слід уникати дублювання й надмірної складності.
+        </li>
+        <li><strong>Пріоритет стабільності (Prioritize Stability):</strong> Ніяких фальшивих позитивів чи негативів —
+            тести мають бути надійними.
+        </li>
+        <li><strong>Мінімізація вартості володіння (Minimizing Cost of Ownership):</strong> Час на написання, запуск і
+            підтримку тестів повинен окупатися.
+        </li>
+        <li><strong>Спільна відповідальність (Shared Responsibility):</strong> Уся команда має підтримувати тести.</li>
+    </ul>
+
+    <h3>Chapter 5: Principles of Test Automation</h3>
+    <ul>
+        <li><strong>Окремий тестовий код (Separate Test Code):</strong> Тестовий код відокремлений від основного.</li>
+        <li><strong>Незалежність тестів (Test Independence):</strong> Тести не повинні залежати один від одного.</li>
+        <li><strong>Повторюваність (Repeatability):</strong> Результати мають бути однаковими за будь-яких умов.</li>
+        <li><strong>Швидкий зворотний зв’язок (Fast Feedback):</strong> Чим швидше виконується, тим корисніше.</li>
+        <li><strong>Простота і зрозумілість (Simplicity and Clarity):</strong> Тести часто слугують «живою
+            документацією».
+        </li>
+        <li><strong>Захищеність від змін (Resistance to Change):</strong> Мінімізувати оновлення тестів після кожної
+            зміни коду.
+        </li>
+        <li><strong>Сфокусованість на бізнес-цінності (Focus on Business Value):</strong> Перевіряти насамперед
+            критичний для бізнесу функціонал.
+        </li>
+        <li><strong>Обробка аномалій (Robustness):</strong> Тести мають коректно реагувати на несподівані стани.</li>
+        <li><strong>Модульність і повторне використання (Modularity and Reusability):</strong> Поділ тестів на логічні
+            компоненти.
+        </li>
+        <li><strong>Інструменти автоматизації (Tool Selection):</strong> Обирати інструменти під конкретні потреби.</li>
+    </ul>
+
+    <!-- Корисні ресурси -->
+    <h2>Корисні ресурси</h2>
+    <h3>Книжки</h3>
+    <ul>
+        <li>
+            <em>Full Stack Testing: A Practical Guide for Delivering High Quality Software</em> —
+            <a href="https://www.amazon.com/Full-Stack-Testing-Practical-High-Quality/dp/1484269949">Amazon</a>
+        </li>
+        <li>
+            <em>xUnit Test Patterns: Refactoring Test Code</em> —
+            <a href="https://www.amazon.com/xUnit-Test-Patterns-Refactoring-Code/dp/0131495054">Amazon</a>
+        </li>
+        <li>
+            <em>Clean Agile: Back to Basics</em> —
+            <a href="https://www.amazon.com/Clean-Agile-Back-Basics/dp/0135781868">Amazon</a>
+        </li>
+        <li>
+            <em>Accelerate: The Science of Lean Software and DevOps</em> —
+            <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339">Amazon</a>
+        </li>
+    </ul>
+
+    <h3>Онлайн-спільноти та платформи</h3>
+    <ul>
+        <li>
+            <strong>Ministry of Testing</strong> —
+            <a href="https://www.ministryoftesting.com/">ministryoftesting.com</a>
+        </li>
+        <li>
+            <strong>SQA StackExchange</strong> —
+            <a href="https://sqa.stackexchange.com/">sqa.stackexchange.com</a>
+        </li>
+        <li>
+            <strong>GitHub Actions Marketplace</strong> —
+            <a href="https://github.com/marketplace?type=actions">github.com/marketplace?type=actions</a>
+        </li>
+    </ul>
+
+    <h3>Для прокачування технічних навичок</h3>
+    <ul>
+        <li><strong>LeetCode</strong> — <a href="https://leetcode.com/">leetcode.com</a></li>
+        <li><strong>Codewars</strong> — <a href="https://www.codewars.com/">codewars.com</a></li>
+        <li><strong>Real Python</strong> — <a href="https://realpython.com/">realpython.com</a></li>
+    </ul>
+
+    <!-- Висновок -->
+    <h2>Висновок</h2>
+    <p>
+        <strong>QA Automation (SDET)</strong> — це не «людина з чеклістом» чи «клікер», а рушійна сила
+        безперервного поліпшення якості. Цей фахівець:
+    </p>
+    <ul>
+        <li>Поєднує тестування, розробку та DevOps-практики.</li>
+        <li>Забезпечує прозорість процесів і реальну аналітику (метрики, моніторинг, логування).</li>
+        <li>Робить внесок у стабільність та швидкість релізів (через налаштовані CI/CD, автоматизацію рутин).</li>
+        <li>Навчає команду брати відповідальність за якість і створювати перевіряльний код від самого початку.</li>
+    </ul>
+    <p>
+        Ідеальний результат роботи SDET — коли команда настільки <em>виросла</em> в культурі якості, що
+        може самостійно підтримувати високий рівень тестування і розробки навіть без постійної присутності
+        QA-фахівця.<br/>
+        Застосування принципів <strong>ISTQB CTAL-TAE</strong> (ефективна архітектура TAS, TestOps,
+        безперервне покращення) та <strong>ISTQB CTAL-TM</strong> (ризик-орієнтоване тестування,
+        стратегія, залучення стейкхолдерів), концепцій <strong>BDD</strong> (Dan North), ідей
+        <strong>Test Automation Manifesto</strong> (Smith &amp; Meszaros) та <strong>xUnit Test Patterns</strong>
+        створює стійкий фундамент для <strong>безперервного розвитку</strong> й
+        <strong>високої якості</strong> програмного забезпечення.
+    </p>
+
+    <hr/>
+    <div class="centered" style="margin-top: 1rem;">
+        <em>Цей документ об’єднує:</em><br/>
+        <em>принципи SDET, BDD, ISTQB Advanced TAE, CTAL-TM, Test Automation Manifesto,</em><br/>
+        <em>тези з xUnit Test Patterns, приклади з реальних проєктів та джерела для глибшого вивчення.</em>
+    </div>
+</div>
+<!-- Optionally load Bootstrap JS if needed -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
