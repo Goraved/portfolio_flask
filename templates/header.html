@@ -1,0 +1,39 @@
+<!-- Add your content of header -->
+<header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+        <div class="container">
+            <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse"
+                    type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav ">
+                    <li><a class="{{ 'active' if request.path == '/' }}" href="/" title="Home">01 : Home</a></li>
+                    <li><a class="{{ 'active' if request.path == '/projects' }}" href="/projects" title="Projects">02 :
+                        Projects</a></li>
+                    <li><a class="{{ 'active' if request.path == '/about' }}" href="/about" title="About me">03 : About
+                        me</a></li>
+                    <li><a class="{{ 'active' if request.path == '/contact' }}" href="/contact" title="Contact">04 :
+                        Contact</a></li>
+                    <li><a class="{{ 'active' if request.path == '/manifesto' }}" href="/manifesto"
+                           title="AQA Manifesto">05 : AQA Manifesto</a></li>
+                </ul>
+
+
+                <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+                    {% for project in projects %}
+                    {% if work_name == project['link']%}
+                    <li><a class="active" href="./{{project['link']}}" title="">{{project['index']}}</a></li>
+                    {% else %}
+                    <li><a href="./{{project['link']}}" title="">{{project['index']}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
